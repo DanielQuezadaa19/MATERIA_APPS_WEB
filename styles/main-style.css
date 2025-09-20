@@ -16,8 +16,8 @@
 }
 
 .img26{
-    width: 70px;
-    height: 55px;
+    width: 10px;
+    height: auto;
 }
 
 .imgMundialMain{
@@ -109,3 +109,11 @@
     font-family: "Inter", sans-serif;
 }
 
+@media (max-width: 768px) {
+    .img26 {
+        width: 50px;
+        height: auto;
+    }
+
+
+}
