@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-contenedor{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    box-shadow: 10px 5px 10px 10px rgba(0, 0, 0, 0.253);
+}
+
+.img26{
+    width: 70px;
+    height: 55px;
+}
+
+.imgMundialMain{
+    overflow: auto;
+}
+
+.lista {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.lista a{
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    margin: 10px;
+    font-size: 13px;
+    text-align: center;
+    
+}
+
+.lista a:hover{
+    background-color: rgb(1, 11, 189);
+    color: white;
+    border-radius: 15px;
+    transform: scaleX(.6);
+    border-bottom: none;
+}
+
+.sites-section{
+    display: flex;
+    justify-content: center;
+}
+
+.sites-section section{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 20px;
+    margin: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.263);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.usa-section:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(2, 5, 163, 0.493);
+}
+
+.mexico-section:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(2, 163, 2, 0.493);
+}
+
+.canada-section:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(218, 0, 0, 0.493);
+}
+
+
+.sites-section section button{
+    margin-top: 15px;
+    background-color: rgb(2, 163, 2);
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.251);
+}
+
+.sites-section section button a{
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}
+
+.flags-section-h1{
+    font-family: "Oswald", sans-serif;
+    margin: 5px, 0px;
+    color: rgb(0, 0, 0);
+}
+
+.flags-section-p{
+    font-family: "Inter", sans-serif;
+}
+
