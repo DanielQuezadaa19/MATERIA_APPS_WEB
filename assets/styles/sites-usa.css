@@ -99,6 +99,52 @@ main{
     transform: scale(1.1);
 }
 
+footer{
+    background-color: rgb(77, 77, 77);
+    padding: 40px;
+    width: 100%;
+    height: auto;
+}
+
+footer p{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+footer img{
+    width: 32px;
+    height: 32px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.social-media a{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    color: white; 
+    text-decoration: none;
+    font-family: "Oswald";
+}
+
+.redirect{
+    text-align: center;
+    padding: 10px;
+}
+
+.redirect a{
+    font-family: "Oswald";
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
 /*tablet*/
 @media (max-width: 650px){
 
@@ -126,6 +172,10 @@ main{
 
     .stadium-section-left button{
         margin: 0;
+    }
+
+        footer{ 
+    width: 80%;
     }
 }
 
@@ -173,4 +223,9 @@ main{
         margin: 10px 0;
         padding: 8px 12px;
     }
+
+    footer{ 
+    width: 80%;
+    }
 }
+

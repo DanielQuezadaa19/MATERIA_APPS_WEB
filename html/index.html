@@ -3,43 +3,388 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/main-style.css" />
+    <title>Mundial 2026 - Principal</title>
+    <link rel="stylesheet" href="/assets/styles/main-style.css" />
+
 </head>
 <body>
     <header>
-        <div class="header-contenedor">
-            <img src="/img/wc-2026-logo.webp" alt="Logo Mundial 2026" class="img26" />
-            <div class="lista-bar">
-                <ul class="lista">
-                    <li><a href="/html/index.html">Inicio</a></li>
-                    <li><a href="#">Selecciones</a></li>
-                    <li><a href="#">Sedes</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                </ul>
-            </div>
+
+        <div class="lista-bar">
+            <button class="menu-boton" onclick="toggleSidebar()">☰</button>
+            
+            <ul class="lista" id="side-bar">
+                <li><a href="/html/index.html">Inicio</a></li>
+                <li><a href="#teams-mundial">Selecciones</a></li>
+                <li><a href="#txtSites">Sedes</a></li>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
         </div>
     </header>
-    <img src="/img/imgMainMundial.png" alt="Imagen representativa del mundial 2026" class="imgMainMundial" />
-    <div class="sites-section">
-        <section class="usa-section">
-            <img src="/img/bandera.png" alt="Imagen representativa de la bandera USA" />
-            <h1 class="flags-section-h1">Estados Unidos</h1>
-            <p class="flags-section-p">Con estadios modernos y ciudades vibrantes, Estados Unidos ofrece infraestructura de primer nivel y diversidad cultural para el Mundial 2026.</p>
-            <button><a href="/src/html/sites-usa.html">Leer más</a></button>
-        </section>
-        <section class="mexico-section">
-            <img src="/img/imgBanderaMexico.png" alt="Imagen representativa de la bandera México" />
-            <h1 class="flags-section-h1">México</h1>
-            <p class="flags-section-p">Con una rica historia futbolística y estadios icónicos como el Estadio Azteca, México combina tradición y pasión para brindar una experiencia inolvidable en el Mundial 2026.</p>
-            <button><a href="#">Leer más</a></button>
-        </section>
-        <section class="canada-section">
-            <img src="/img/imgBanderaCanada.png" alt="Imagen representativa de la bandera Canadá" />
-            <h1 class="flags-section-h1">Canadá</h1>
-            <p class="flags-section-p">Con ciudades multiculturales y estadios de última generación, Canadá aporta organización, hospitalidad y un entorno moderno al Mundial 2026.</p>
-            <button><a href="#">Leer más</a></button>
-        </section>
-    </div>
+    
+    <body>
+
+        
+        <img src="/img/imgBanderasMainn.png" alt="Imagen representativa del mundial 2026" class="imgMainMundial" />
+        <h2 class="txtSites" id="txtSites">SEDES</h2>
+        <div class="sites-section" id="sites-section">
+            <section class="country-section">
+                <img src="/img/bandera.png" alt="Imagen representativa de la bandera USA" />
+                <h1 class="flags-section-h1">Estados Unidos</h1>
+                <p class="flags-section-p">Con estadios modernos y ciudades vibrantes, Estados Unidos ofrece infraestructura de primer nivel y diversidad cultural para el Mundial 2026.</p>
+                <button><a href="/html/sites-usa.html">Leer más</a></button>
+            </section>
+            <section class="country-section">
+                <img src="/img/imgBanderaMexico.png" alt="Imagen representativa de la bandera México" />
+                <h1 class="flags-section-h1">México</h1>
+                <p class="flags-section-p">Con una rica historia futbolística y estadios icónicos como el Estadio Azteca, México combina tradición y pasión para brindar una experiencia inolvidable en el Mundial 2026.</p>
+                <button><a href="#">Leer más</a></button>
+            </section>
+            <section class="country-section">
+                <img src="/img/imgBanderaCanada.png" alt="Imagen representativa de la bandera Canadá" />
+                <h1 class="flags-section-h1">Canadá</h1>
+                <p class="flags-section-p">Con ciudades multiculturales y estadios de última generación, Canadá aporta organización, hospitalidad y un entorno moderno al Mundial 2026.</p>
+                <button><a href="#">Leer más</a></button>
+            </section>
+        </div>
+
+        <div class="days-container">
+            <h2 class="days-h2">FALTAN</h2>
+            <p id="days"></p>
+
+            <h2 class="days-h2">DÍAS</h2>
+        </div>
+
+
+        <div class="teams-mundial" id="teams-mundial">
+            <h2>CONCACAF</h2>
+            <div class="concacaf-teams">
+                
+
+                <div class="team-card">
+                    <img
+                        src="https://flagcdn.com/36x27/um.png"
+                        srcset="https://flagcdn.com/72x54/um.png 2x,
+                            https://flagcdn.com/108x81/um.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Islas Ultramarinas Menores de los Estados Unidos">
+                        <p>USA</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                            src="https://flagcdn.com/36x27/mx.png"
+                            srcset="https://flagcdn.com/72x54/mx.png 2x,
+                                https://flagcdn.com/108x81/mx.png 3x"
+                            width="36"
+                            height="27"
+                            alt="México">
+                        <p>México</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                            src="https://flagcdn.com/36x27/ca.png"
+                            srcset="https://flagcdn.com/72x54/ca.png 2x,
+                                https://flagcdn.com/108x81/ca.png 3x"
+                            width="36"
+                            height="27"
+                            alt="Canadá">
+                        <p>Canadá</p>
+                </div>
+
+
+            </div> 
+
+            <h2>UEFA</h2>
+            <div class="uefa-teams">
+                
+                <div class="team-card">
+                    <img
+                    src="https://flagcdn.com/36x27/mf.png"
+                    srcset="https://flagcdn.com/72x54/mf.png 2x,
+                        https://flagcdn.com/108x81/mf.png 3x"
+                    width="36"
+                    height="27"
+                    alt="San Martín (Francia)">
+                    <p>Francia</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                        src="https://flagcdn.com/36x27/de.png"
+                        srcset="https://flagcdn.com/72x54/de.png 2x,
+                            https://flagcdn.com/108x81/de.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Alemania">
+                    <p>Alemania</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                    src="https://flagcdn.com/36x27/es.png"
+                    srcset="https://flagcdn.com/72x54/es.png 2x,
+                        https://flagcdn.com/108x81/es.png 3x"
+                    width="36"
+                    height="27"
+                    alt="España">
+                    <p>España</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                    src="https://flagcdn.com/36x27/gb-eng.png"
+                    srcset="https://flagcdn.com/72x54/gb-eng.png 2x,
+                        https://flagcdn.com/108x81/gb-eng.png 3x"
+                    width="36"
+                    height="27"
+                    alt="Inglaterra">
+                    <p>Inglaterra</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                        src="https://flagcdn.com/36x27/it.png"
+                        srcset="https://flagcdn.com/72x54/it.png 2x,
+                            https://flagcdn.com/108x81/it.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Italia">
+                    <p>Italia</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                        src="https://flagcdn.com/36x27/be.png"
+                        srcset="https://flagcdn.com/72x54/be.png 2x,
+                            https://flagcdn.com/108x81/be.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Bélgica">
+                    <p>Bélgica</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                            src="https://flagcdn.com/36x27/nl.png"
+                            srcset="https://flagcdn.com/72x54/nl.png 2x,
+                                https://flagcdn.com/108x81/nl.png 3x"
+                            width="36"
+                            height="27"
+                            alt="Países Bajos">
+                    <p>Países Bajos</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                    src="https://flagcdn.com/36x27/pt.png"
+                    srcset="https://flagcdn.com/72x54/pt.png 2x,
+                        https://flagcdn.com/108x81/pt.png 3x"
+                    width="36"
+                    height="27"
+                    alt="Portugal">
+                    <p>Portugal</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                    src="https://flagcdn.com/36x27/hr.png"
+                    srcset="https://flagcdn.com/72x54/hr.png 2x,
+                        https://flagcdn.com/108x81/hr.png 3x"
+                    width="36"
+                    height="27"
+                    alt="Croacia">
+                    <p>Croacia</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                        src="https://flagcdn.com/36x27/ch.png"
+                        srcset="https://flagcdn.com/72x54/ch.png 2x,
+                            https://flagcdn.com/108x81/ch.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Suiza">
+                    <p>Suiza</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                        src="https://flagcdn.com/36x27/dk.png"
+                        srcset="https://flagcdn.com/72x54/dk.png 2x,
+                            https://flagcdn.com/108x81/dk.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Dinamarca">
+                    <p>Dinamarca</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                    src="https://flagcdn.com/36x27/se.png"
+                    srcset="https://flagcdn.com/72x54/se.png 2x,
+                        https://flagcdn.com/108x81/se.png 3x"
+                    width="36"
+                    height="27"
+                    alt="Suecia">
+                    <p>Suecia</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                    src="https://flagcdn.com/36x27/pl.png"
+                    srcset="https://flagcdn.com/72x54/pl.png 2x,
+                        https://flagcdn.com/108x81/pl.png 3x"
+                    width="36"
+                    height="27"
+                    alt="Polonia">
+                    <p>Polonia</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                    src="https://flagcdn.com/36x27/rs.png"
+                    srcset="https://flagcdn.com/72x54/rs.png 2x,
+                        https://flagcdn.com/108x81/rs.png 3x"
+                    width="36"
+                    height="27"
+                    alt="Serbia">
+                    <p>Serbia</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                        src="https://flagcdn.com/36x27/gb-wls.png"
+                        srcset="https://flagcdn.com/72x54/gb-wls.png 2x,
+                            https://flagcdn.com/108x81/gb-wls.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Gales">
+                    <p>Gales</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                        src="https://flagcdn.com/36x27/ua.png"
+                        srcset="https://flagcdn.com/72x54/ua.png 2x,
+                            https://flagcdn.com/108x81/ua.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Ucrania">
+                    <p>Ucrania</p>
+                </div>
+
+            </div> 
+
+            <h2>CAF</h2>
+            <div class="caf-teams">
+                
+                <div class="team-card">
+                    <img
+                        src="https://flagcdn.com/36x27/sn.png"
+                        srcset="https://flagcdn.com/72x54/sn.png 2x,
+                            https://flagcdn.com/108x81/sn.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Senegal">
+                    <p>Senegal</p>
+                </div>
+
+                <div class="team-card">
+                    <img
+                        src="https://flagcdn.com/36x27/ng.png"
+                        srcset="https://flagcdn.com/72x54/ng.png 2x,
+                            https://flagcdn.com/108x81/ng.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Nigeria">
+                    <p>Nigeria</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                            src="https://flagcdn.com/36x27/eg.png"
+                            srcset="https://flagcdn.com/72x54/eg.png 2x,
+                                https://flagcdn.com/108x81/eg.png 3x"
+                            width="36"
+                            height="27"
+                            alt="Egipto">
+                    <p>Egipto</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                            src="https://flagcdn.com/36x27/ma.png"
+                            srcset="https://flagcdn.com/72x54/ma.png 2x,
+                                https://flagcdn.com/108x81/ma.png 3x"
+                            width="36"
+                            height="27"
+                            alt="Marruecos">
+                    <p>Marruecos</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                        src="https://flagcdn.com/36x27/tn.png"
+                        srcset="https://flagcdn.com/72x54/tn.png 2x,
+                            https://flagcdn.com/108x81/tn.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Túnez">
+                    <p>Túnez</p>
+                </div>
+
+                <div class="team-card">
+                      <img
+                        src="https://flagcdn.com/36x27/gh.png"
+                        srcset="https://flagcdn.com/72x54/gh.png 2x,
+                            https://flagcdn.com/108x81/gh.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Ghana">  
+                    <p>Ghana</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                        src="https://flagcdn.com/36x27/cm.png"
+                        srcset="https://flagcdn.com/72x54/cm.png 2x,
+                            https://flagcdn.com/108x81/cm.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Camerún">
+                    <p>Camerún</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                        src="https://flagcdn.com/36x27/ci.png"
+                        srcset="https://flagcdn.com/72x54/ci.png 2x,
+                            https://flagcdn.com/108x81/ci.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Costa de Marfil">
+                    <p>Costa de Marfíl</p>
+                </div>
+
+                <div class="team-card">
+                        <img
+                        src="https://flagcdn.com/36x27/dz.png"
+                        srcset="https://flagcdn.com/72x54/dz.png 2x,
+                            https://flagcdn.com/108x81/dz.png 3x"
+                        width="36"
+                        height="27"
+                        alt="Argelia">
+                    <p>Argelia</p>
+                </div>
+        </div>
+
+
+        
+    <script src="/assets/source/js/button.js"></script>
+    <script src="/assets/source/js/date.js"></script>
+        
 </body>
 </html>
