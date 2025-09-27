@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header-contenedor{
+.header-contenedor {
     display: flex;
     align-items: center;
     position: relative;
@@ -18,14 +19,17 @@
     margin: 0;
 }
 
-.imgMainMundial{
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+.imgMainMundial {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
-header{
+header {
     position: relative;
     width: 100%;
-    
 }
 
 .menu-boton {
@@ -36,24 +40,22 @@ header{
     color: rgb(255, 255, 255);
     cursor: pointer;
     position: relative;
-     z-index: 1100; 
+    z-index: 1100;
 }
 
-.lista-bar{
+.lista-bar {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 20px;
     z-index: 20;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.226);
-    padding: 20px;
     border-bottom: 1px solid rgba(175, 175, 175, 0.199);
     position: fixed;
 }
 
-
-.lista{
+.lista {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -62,7 +64,7 @@ header{
     gap: 10px;
 }
 
-.lista a{
+.lista a {
     font-family: "Inter", sans-serif;
     text-decoration: none;
     padding: 10px 20px;
@@ -70,63 +72,56 @@ header{
     margin: 0 10px;
     font-size: 15px;
     text-align: center;
-    font-style: bold;
+    font-weight: bold;
 }
 
-.lista a:hover{
+.lista a:hover {
     background-color: rgba(175, 175, 175, 0.199);
     border-radius: 10px;
     transform: scale(1.05);
 }
 
-.hero{
+.hero {
     width: 100%;
     height: auto;
     overflow: hidden;
 }
 
-.imgMainMundial{
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-.sites-section{
+.sites-section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
 }
 
-.sites-section section{
+.sites-section section {
     background-color: rgb(255, 255, 255);
     width: 30%;
     border-radius: 20px;
     padding: 10px;
     gap: 20px;
     margin: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.263);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.263);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.5s ease;
+    align-items: center;
 }
 
-.country-section:hover{
-    transform: scale(1.05);
-    
+.sites-section section img{
+    display: block;
+    margin: 0 auto;
 }
 
-.sites-section section button{
+.sites-section section button {
     margin-top: 15px;
     background-color: rgb(255, 255, 255);
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.251);
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.251);
 }
 
-.sites-section section button a{
+.sites-section section button a {
     font-family: "Inter", sans-serif;
     font-style: italic;
     text-decoration: none;
@@ -134,39 +129,36 @@ header{
     font-weight: bold;
 }
 
-
-.flags-section-h1{
+.flags-section-h1 {
     font-family: "Oswald", sans-serif;
-    margin: 5px 0px;
+    margin: 5px 0;
     color: rgb(0, 0, 0);
 }
 
-.flags-section-p{
+.flags-section-p {
     font-family: "Inter", sans-serif;
 }
 
-.teams-mundial{
+.teams-mundial {
     margin-top: 40px;
-
 }
 
-.txtSites{
-        font-family: "Inter";
+.txtSites {
+    font-family: "Inter", sans-serif;
     text-align: start;
     border-bottom: 1px solid rgba(128, 128, 128, 0.276);
     padding: 5px;
     margin-top: 20px;
 }
 
-.teams-mundial h2{
-    font-family: "Inter";
+.teams-mundial h2 {
+    font-family: "Inter", sans-serif;
     text-align: start;
     border-bottom: 1px solid rgba(128, 128, 128, 0.276);
     padding: 5px;
 }
 
-.concacaf-teams, .uefa-teams, 
-.caf-teams{
+.concacaf-teams, .uefa-teams, .caf-teams {
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
@@ -174,10 +166,7 @@ header{
     flex-wrap: wrap;
 }
 
-
-
-
-.team-card{
+.team-card {
     background-color: white;
     margin: 7px;
     border-radius: 10px;
@@ -185,40 +174,62 @@ header{
     height: 100px;
     align-items: center;
     justify-content: center;
-    gap: 8;
+    gap: 8px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.221);
-    border: 1px solid rgb(0, 126, 216);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.221);
     transition: transform 0.3s ease;
 }
 
-.team-card:hover{
+.team-card:hover {
     transform: scale(1.1);
 }
 
-.team-card p{
-    font-family: "Inter";
+.team-card p {
+    font-family: "Inter", sans-serif;
     font-style: italic;
     padding: 15px;
-
+    margin: 0;
 }
 
+
+
+
+
+.days-container {
+    background-color: rgb(0, 126, 216);
+    padding: 10px;
+}
+
+.days-h2 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-style: italic;
+}
+
+#days {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    color: white;
+    font-style: italic;
+    margin: 10px;
+}
+
+
 @media (max-width: 768px) {
-
-
-
     .img26 {
         width: 40px;
         height: auto;
     }
 
-    .sites-section{
+    .sites-section {
         flex-direction: column;
         align-items: center;
     }
 
-    .sites-section section{
+    .sites-section section {
         width: 90%;
     }
 
@@ -227,10 +238,9 @@ header{
         position: absolute;
         top: 15px;
         left: 15px;
-        background-color: rgba(235, 235, 235, 0);
+        background-color: transparent;
         color: rgb(86, 86, 86);
         padding: 1px;
-        
     }
 
     .lista {
@@ -244,59 +254,34 @@ header{
         width: 100%;
         padding: 20px 0;
         gap: 20px;
-        
     }
 
-    .lista.active{
+    .lista.active {
         display: flex;
         background-color: white;
         position: fixed;
         top: 70px;
-        box-shadow: 0px 0px 10px black;
+        box-shadow: 0 0 10px black;
+        align-items: center;
     }
 
-    .lista.active a{
+    .lista.active a {
         color: black;
     }
 
-    .lista-bar{
+    .lista-bar {
         border: none;
         padding: 35px;
         position: fixed;
-        background-color: rgba(0, 0, 0, 0);
-
+        background-color: transparent;
     }
 
-
-
-    @media(max-width: 400px){
-        .lista-bar{
+    @media (max-width: 400px) {
+        .lista-bar {
             padding: 35px;
             align-items: center;
         }
     }
+    
 }
-
-.days-container{
-    background-color: rgb(0, 126, 216);
-    padding: 10px;
-
-}
-
-.days-h2{
-    text-align: center;
-    font-family: Inter;
-    color: white;
-    font-style: italic;
-}
-
-#days{
-    text-align: center;
-    font-family: "Oswald";
-    font-size: 50px;
-    color: white;
-    font-style: italic;
-    margin: 10px;
-}
-
 
